@@ -131,3 +131,5 @@ function sample()
     }
     return false;
 }
+
+sample();
