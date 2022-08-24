@@ -10,8 +10,12 @@
     height: 50px;
     width: 50px;
     font-size:  2em;
-    text-align: center;
-    
+    text-align: center;   
+}
+
+td[contenteditable="true"]
+{
+    color:blue;
 }
 
 .r3, .r6

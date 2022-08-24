@@ -85,8 +85,47 @@ function isEnd(arr)
             }
             else
             {
-                col.push(arr[i][j]);
-                console.log(col);
+                col.push(Number(arr[i][j]));
+                console.log(arr[i][j]);
+                console.log("you won");
+               
+            }
+        }
+    }
+    body.innerHTML="wow you made it!! Will create new levels soon";
+    alert("Nice");
+    return false;
+}
+
+var sample1=[
+[0,0,0,2,6,0,7,0,1],
+[6,8,0,0,7,0,0,9,0],
+[1,9,0,0,0,4,5,0,0],
+[8,2,0,1,0,0,0,4,7],
+[0,0,4,6,0,2,9,0,0],
+[0,5,0,0,0,3,0,2,8],
+[0,0,9,3,0,0,0,7,4],
+[0,4,0,0,5,0,0,3,6],
+[7,0,3,0,1,8,0,0,0]];
+
+function sample()
+{
+    let td=document.getElementsByTagName("td");
+    let count=0;
+    for(let i=0;i<=8;i++)
+    {
+        for(let j=0;j<=8;j++)
+        {
+            count++;
+            if(sample1[i][j]==0)
+            {
+                continue;
+            }
+            else
+            {
+                console.log(count);
+                td[count-1].innerText=sample1[i][j];
+                td[count-1].setAttribute("contenteditable","false");
             }
         }
     }
