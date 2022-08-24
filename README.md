@@ -1,4 +1,4 @@
 # Sudoku.github.io
 
 
-The game is still under development of Logic
+The Sudoku is having one level which you can explore and also you can contribute.
