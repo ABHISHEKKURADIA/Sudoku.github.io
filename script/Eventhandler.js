@@ -56,7 +56,6 @@ function confirmEnd()
             j=i;
             i=j++;
             arr.push(temp);
-            // console.log(arr);
             temp=[];
         }
 
@@ -70,7 +69,6 @@ function confirmEnd()
 function isEnd(arr)
 {
     var pattern=new RegExp(/^[1-9]$/);
-    console.log(arr);
     let row=[];
     let col=[];
     for(let i=0;i<=8;i++)
@@ -80,14 +78,11 @@ function isEnd(arr)
         {
             if(!pattern.test(arr[i][j]) || col.includes(arr[i][j]))
             {
-                console.log("Not over Yet");
                 return false;
             }
             else
             {
                 col.push(Number(arr[i][j]));
-                console.log(arr[i][j]);
-                console.log("you won");
                
             }
         }
@@ -123,7 +118,6 @@ function sample()
             }
             else
             {
-                console.log(count);
                 td[count-1].innerText=sample1[i][j];
                 td[count-1].setAttribute("contenteditable","false");
             }
